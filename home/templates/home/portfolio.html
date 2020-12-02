@@ -1,0 +1,193 @@
+{% extends 'home/base.html' %}
+
+{% load static %}
+
+{% load crispy_forms_tags %}
+
+{% block content %}
+
+<section class="s1">
+    <div class="main-container">
+        <div class="greeting-wrapper">
+            <h1>Hi! I'm Camilo Álvarez</h1>
+        </div>
+
+        <div class="intro-wrapper">
+
+            <div class="left-column">
+                <img id="profile_pic" src="{% static 'images/photo.jpg' %}">
+                <br>
+                <h5 style="text-align: center; line-height:0;">Personalize Theme</h5>
+                <div id="theme-options-wrapper">
+                    <div data-mode="light" id="light-mode" class="theme-dot"></div>
+                    <div data-mode="blue" id="blue-mode" class="theme-dot"></div>
+                    <div data-mode="green" id="green-mode" class="theme-dot"></div>
+                    <div data-mode="purple" id="purple-mode" class="theme-dot"></div>
+                </div>
+                <p id="settings-note">*Theme settings will be save for <br> your next visit</p>
+            </div>
+
+            <div class="right-column">
+                <div id="preview-shadow">
+                <div id="preview">
+                    <div id="corner-tl" class="corner"></div>
+                    <div id="corner-tr" class="corner"></div>
+                    <h3>Who am I?</h3>
+                    <p>Chemical Engineer enthusiastic about solving problems with Python.</p>
+                    <div id="corner-br" class="corner"></div>
+                    <div id="corner-bl" class="corner"></div>
+                </div>
+                </div>
+            </div>
+
+        </div>
+        
+    </div>
+</section>
+
+<section class="s2">
+    <div class="main-container">
+        <div class="about-wrapper">
+            <div class="about-me">
+                <h4>More about me</h4>
+                <p>Love learning new technologies and solving problems using Python. 
+                        Have a great ability to apply new knowledge to other fields
+                    and a great adaptability to new jobs environments</p>
+                <p>I have a master degree in Materials.</p>
+                <hr>
+
+                <h4>My Skills</h4>
+
+                <div id="skills">
+                    <ul>
+                        <li>Python</li>
+                        <li>Numpy</li>
+                        <li>Matplotlib</li>
+                        <li>Scipy</li>
+                        <li>Pandas</li>
+                    </ul>
+                    <ul>
+                        <li>Git/GitHub</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Javascript</li>
+                        <li>AWS</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="social-links">
+
+                <p>I am self-taught in the field of technology. My key strength is to learn quickly and autodidactically 
+                    by watching videos or reading books. I have completed several online courses.</p>
+                <a target="_blank" href="{% static 'files/resume.pdf' %}">Download Resume</a>
+
+                <h4>Find me</h4>
+                <a target="_blank" href="https://github.com/acamalvarez">GitHub: acamalvarez</a>
+                <a target="_blank" href="https://www.linkedin.com/in/acamalvarez/">LinkedIn: @acamalvarez</a>
+                
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="s1">
+    <div clas="main-container">
+        <h3 style="text-align: center;"><a name="projects"></a>Some of my projects</h3>
+        <div class="post-wrapper">
+
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                    <img src="{% static 'images/natufresh_logo.png' %}" class="thumbnail">
+                    </div>
+                    <div class="flip-card-back">
+                        <p style="margin: 10%;">Web page for a ficticious grocery's company</p>
+                        <h5><a target="_blank" href="https://natu-fresh.herokuapp.com">Go to project</a></h5>
+                        <h5><a target="_blank" href="https://github.com/acamalvarez/natufresh">Source code</a></h5>
+                        <div id="skills-card">
+                            <ul>
+                                <li>Python</li>
+                                <li>Django</li>
+                                <li>CSS</li>
+                            </ul>
+                            <ul>
+                                <li>HTML</li>
+                                <li>AWS</li>
+                                <li>Heroku</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                    <img src="{% static 'images/dj4e.svg' %}" alt="Screenshot" class="thumbnail">
+                    </div>
+                    <div class="flip-card-back">
+                        <p style="margin: 10%;">Final project for the Django for Everybody Specialization on Coursera</p>
+                        <h5><a target="_blank" href="https://acamalvarez.pythonanywhere.com/">Go to project</a></h5>
+                        <div id="skills-card">
+                            <ul>
+                                <li>Python</li>
+                                <li>Django</li>
+                                <li>pythonanywhere</li>
+                            </ul>
+                            <ul>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                    <img src="{% static 'images/coming_soon.svg' %}" class="thumbnail">
+                    </div>
+                    <div class="flip-card-back">
+                        <p style="margin: 10%;">I am working of projects dealing with Django and data science using Python</p>
+                        <div id="skills-card">
+                            <ul>
+                                <li>Python</li>
+                                <li>Django</li>
+                                <li>NumPy</li>
+                            </ul>
+                            <ul>
+                                <li>Matplotlib</li>
+                                <li>pandas</li>
+                                <li>SciPy</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="s2">
+    <div class="main-container">
+        <h3  style="text-align: center;"><a name="GetIntouch"></a>Get in Touch</h3>
+
+        <form id="contact-form" action="" method="POST">
+
+            {% csrf_token %}
+
+            {% for hidden in form.hidden_fields %}
+            {{ hidden }}
+            {% endfor %}
+
+            {{ form|crispy }}
+
+            <input id="submit-btn" type="submit" value="Send">
+        </form>
+    </div>
+</section>
+
+{% endblock %}

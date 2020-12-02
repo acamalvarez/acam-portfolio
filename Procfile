@@ -1,0 +1,1 @@
+web: gunicorn acamalvarez.wsgi --log-file -
