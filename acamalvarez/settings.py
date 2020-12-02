@@ -16,6 +16,8 @@ import os
 
 import environ
 
+import django_heroku
+
 env = environ.Env()
 environ.Env.read_env()
 
@@ -53,6 +55,9 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
+
+    'whitenoise.middleware.WhiteNoiseMiddleware',
+
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -142,3 +147,5 @@ CRISPY_TEMPLATE_PACK = 'bootstrap4'
 # Email configuration
 SENDGRID_API_KEY = env('SENDGRID_API_KEY')
 EMAIL_USE_TLS = True
+
+django_heroku.settings(locals())
