@@ -36,45 +36,6 @@ def hours(request):
 
     return render(request, 'salary_calculation/hours.html', {'formset':formset})
 
-    # if request.method == 'POST':
-    #     salary_month = float(request.GET.get('salary', 0))
-    #     salary_fortnight = salary_month / 2
-    #     salary_day = salary_month / 30
-    #     salary_hour = salary_month / 240
-
-    #     total_hours_cost = HOURS_EMPTY
-    #     sum_hours = HOURS_EMPTY
-    #     total_extra_hours = 0
-
-    #     formset = CalculateFormSet(request.POST, initial=initial)
-
-    #     forms_number = int(request.POST.get('form-TOTAL_FORMS', 0))
-    #     list_forms_number = [str(i) for i in range(forms_number)]
-       
-    # #     if hour_form.is_valid():
-            
-    # #         year = int(request.POST['start_date_year'])
-    # #         month = int(request.POST['start_date_month'])
-    # #         day = int(request.POST['start_date_day'])
-    # #         start_date = datetime(year, month, day)
-
-    # #         fortnight = create_fortnight(start_date)
-
-    # #         initial = [{'day':fortnight[i], 'start_hour':22, 'hour_number':8} for i in range(len(fortnight))]
-
-    # #         CalculateFormSet = formset_factory(CalculateForm, extra=0)
-    # #         formset = CalculateFormSet(initial=initial)
-
-    # #         note = 'This is your salary'
-    # #     else:
-    # #         note = "Error"
-    # #     return render(request, 'salary_calculation/salary.html', 
-    # #         {'note': note, 'hour_form': hour_form, 'formset':formset})
-    # # else:
-    # #     hour_form = HourForm()
-    # #     return render(request, 'salary_calculation/salary.html', 
-    # #                 {'hour_form': hour_form, 'formset':formset})
-
 
 def total(request):
 
@@ -158,16 +119,16 @@ def total(request):
     # print(len(list_forms_number))
     print('Total extra hours:', total_extra_hours)
 
-    if len(list_forms_number) < 16:
+    if forms_number < 16:
 
         salary_total = round(total_extra_hours * salary_hour + 
-                            salary_hour * total_ordinaria_hours + 
+                            salary_day * forms_number + 
                             auxilio_transporte_fortnight
                              - salud_y_pension)
 
     else:
         salary_total = round(total_extra_hours * salary_hour + 
-                            salary_hour * total_ordinaria_hours + 
+                            salary_day * forms_number + 
                             auxilio_transporte_fortnight
                              + salary_day + auxilio_transporte_day 
                              - salud_y_pension)

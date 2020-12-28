@@ -11,38 +11,38 @@
         {% csrf_token %}
         {{ formset.management_form }}
 
-        <div class="row">
-            <div class="col">
+        <div class="form-hours">
+
+            <div class="dia-form-hours">
                 <strong>Día</strong>
             </div>
-            <div class="col">
-                <strong>Hora comienzo</strong>
+            <div class="comienzo-form-hours">
+                <strong>Hora entrada</strong>
             </div>
-            <div class="col">
-                <strong>Número de horas</strong>
-            </div>
-        </div>
+            <div class="numero-form-hours">
+                <strong>Horas trabajadas</strong>
+            </div>        
 
-        {% for form in formset %}
+            {% for form in formset %}
 
-        <div class="row text-align-center">
-            <div class="col">
+            <div class="dia-form-hours">
                 {{ form.day }}
             </div>
-            <div class="col">
+
+            <div class="comienzo-form-hours">
                 {{ form.start_hour }}
             </div>
-            <div class="col">
+
+            <div class="numero-form-hours">
                 {{ form.hour_number }}
             </div>
+
+            {% endfor %}
+
         </div>
 
-        
-        
-        
-
         <br>
-        {% endfor %}
+        
 
         <input class="btn btn-primary" type="submit" value="Calcular salario">
 
