@@ -41,6 +41,7 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
 
     'home.apps.HomeConfig',
+    'salary_calculation.apps.SalaryCalculationConfig',
 
     'django.contrib.admin',
     'django.contrib.auth',

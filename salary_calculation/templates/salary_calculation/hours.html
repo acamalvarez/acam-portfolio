@@ -1,0 +1,61 @@
+{% extends 'home/base.html' %}
+
+
+{% block content %}
+
+<div class="container text-center" style="width: 490px;">
+
+    <h2>Quincena</h2>
+
+    <form action="total" method="POST">
+        {% csrf_token %}
+        {{ formset.management_form }}
+
+        <div class="row">
+            <div class="col">
+                <strong>Día</strong>
+            </div>
+            <div class="col">
+                <strong>Hora comienzo</strong>
+            </div>
+            <div class="col">
+                <strong>Número de horas</strong>
+            </div>
+        </div>
+
+        {% for form in formset %}
+
+        <div class="row text-align-center">
+            <div class="col">
+                {{ form.day }}
+            </div>
+            <div class="col">
+                {{ form.start_hour }}
+            </div>
+            <div class="col">
+                {{ form.hour_number }}
+            </div>
+        </div>
+
+        
+        
+        
+
+        <br>
+        {% endfor %}
+
+        <input class="btn btn-primary" type="submit" value="Calcular salario">
+
+    </form>
+
+    <br><br>
+
+    <a href="{% url 'salary' %}">
+        <button type="button" class="btn btn-primary">Volver</button>
+    </a>
+
+</div>
+
+
+
+{% endblock content %}

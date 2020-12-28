@@ -1,0 +1,20 @@
+{% extends 'home/base.html' %}
+
+
+{% block content %}
+
+<div class="container">
+
+    Su salario aproximado será de
+    <strong>{{ salary_total }}.</strong>
+
+    <br><br>
+
+    <a href="{% url 'salary' %}">
+        <button type="button" class="btn btn-primary">Volver</button>
+    </a>
+
+</div>
+
+
+{% endblock content %}

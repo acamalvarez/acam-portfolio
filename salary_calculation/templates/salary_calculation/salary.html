@@ -1,0 +1,55 @@
+{% extends 'home/base.html' %}
+
+
+{% block content %}
+
+<div class="container">
+    
+    <h2 class="text-center">Calcule su salario</h2>
+    <br>
+    <p>
+        Ingrese su salario básico mensual y la fecha
+         de comienzo de la quincena que desea calcular
+    </p>
+
+    <form action="{% url 'hours' %}" method="POST" id="salaryForm">
+
+        {% csrf_token %}
+
+        <div class="row mb-3">
+            <div class="col">
+
+                <div class="col-5">
+                    <label><strong>Salario:</strong></label>
+                </div>
+                <div class="col-5">
+                    {{ hour_form.salary_month }} 
+                </div>
+                
+                <br>
+                
+                <div class="col-5">
+                    <label><strong>Fecha de inicio:</strong></label>
+                    
+                </div>
+                <div class="col-7">
+                    {{ hour_form.start_date }}
+                </div>
+
+            </div>
+            
+            
+        </div>
+
+        <br>
+
+        <input class="btn btn-primary" type="submit" value="Ver quincena">
+
+    </form>
+
+</div>
+
+
+    
+
+{% endblock content %}
