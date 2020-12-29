@@ -7,9 +7,9 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="30mm"
-   height="30mm"
-   viewBox="0 0 30 30"
+   width="29.999998mm"
+   height="21.999998mm"
+   viewBox="0 0 29.999998 21.999998"
    version="1.1"
    id="svg8"
    inkscape:export-filename="C:\Users\acam\OneDrive\web\acamalvarez.github.io\images\dj4e.png"
@@ -34,8 +34,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="2.8"
-     inkscape:cx="31.392123"
-     inkscape:cy="56.262953"
+     inkscape:cx="31.39212"
+     inkscape:cy="56.262958"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
@@ -65,21 +65,21 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-25.20238,-33.895835)">
+     transform="translate(-25.202381,-33.895834)">
     <text
        xml:space="preserve"
        id="text16"
        style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect18);fill:#000000;fill-opacity:1;stroke:none;" />
     <rect
        id="rect22"
-       width="29.59487"
-       height="29.59487"
-       x="25.404945"
-       y="34.0984"
-       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.40513;stroke-miterlimit:4;stroke-dasharray:none" />
+       width="29.653124"
+       height="21.653124"
+       x="25.375818"
+       y="34.069271"
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.346875;stroke-miterlimit:4;stroke-dasharray:none" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:'Palatino Linotype';fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583;-inkscape-font-specification:'Palatino Linotype';font-stretch:normal;font-variant:normal;"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.5833px;line-height:1.25;font-family:'Palatino Linotype';-inkscape-font-specification:'Palatino Linotype';fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
        x="-19.398809"
        y="38.715031"
        id="text872"><tspan
@@ -87,10 +87,10 @@
          id="tspan870"
          x="-19.398809"
          y="38.715031"
-         style="stroke-width:0.264583;-inkscape-font-specification:'Palatino Linotype';font-family:'Palatino Linotype';font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;" /></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Palatino Linotype';-inkscape-font-specification:'Palatino Linotype';stroke-width:0.264583" /></text>
     <g
        id="g900"
-       transform="translate(48.010165,14.150631)">
+       transform="translate(48.010165,9.9172953)">
       <text
          xml:space="preserve"
          style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#008080;fill-opacity:1;stroke:none;stroke-width:0.264583"
