@@ -37,6 +37,10 @@ p, li, span, label, input, textarea{
 
 }
 
+li {
+    color: black;
+}
+
 h1 { font-size: 52px;}
 h2 { font-size: 32px;}
 h3 { font-size: 24px;}
@@ -322,11 +326,15 @@ a {
     width: 300px;
 }
 
+.card-text {
+    color: black;
+}
+
 #skills-card{
     display: flex;
     justify-content: space-evenly;
     text-align: left;
-    background-color: var(--secondaryColor);
+    background-color: white;
 }
 
 .post-preview{

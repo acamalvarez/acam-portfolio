@@ -38,7 +38,7 @@ def check_hour_type(hours_dict):
         hour = value.hour
         holyday_or_sunday = is_holyday_or_sunday(value)
 
-        if key <= 8:
+        if key < 8:
 
             if hour not in Constant.night_hours and not holyday_or_sunday:
                 hour_type = 'ordinaria'
