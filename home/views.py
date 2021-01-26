@@ -62,7 +62,7 @@ def home(request):
                 print(e)
             return redirect('sucess')
 
-    return render(request, 'home/portfolio.html', {'form': form})
+    return render(request, 'home/index.html', {'form': form})
 
 def successView(request):
 
