@@ -440,7 +440,7 @@ input[type=button], input[type=submit], input[type=reset], button {
             'nav-wrapper'
             'left-column'
             'right-column';
-        height: 750px;
+        height: 850px;
     }
 
     .right-column{
