@@ -62,7 +62,7 @@ a {
 }
 
 .acam-img {
-    width: auto;
+    width: 9em;
 }
 
 .navbar ul {
@@ -91,6 +91,7 @@ a {
     overflow: auto;
     padding: 0 40px;
 }
+
 
 .flex {
     display: flex;
