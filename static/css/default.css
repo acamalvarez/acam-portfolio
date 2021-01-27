@@ -160,16 +160,17 @@ a {
     margin: auto 1em;
 }
 
-.dots-wrapper{
-    display: flex;
-    padding: 10px;
-
-}
 
 .left-column{
     grid-area: left-column;
     padding-top: 10px;
     padding-bottom: 0px;
+}
+
+.right-column{
+    grid-area: right-column;
+    padding-top: 0px;
+    padding-bottom: 20px;
 }
 
 #profile_pic{
@@ -436,11 +437,10 @@ input[type=button], input[type=submit], input[type=reset], button {
 @media screen and (max-width: 800px){
     .intro-wrapper{
         grid-template-columns: 1fr;
-        grid-template-areas: 
-            'nav-wrapper'
+        grid-template-areas:
             'left-column'
             'right-column';
-        height: 850px;
+        height: 700px;
     }
 
     .right-column{
