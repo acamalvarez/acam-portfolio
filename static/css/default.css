@@ -57,7 +57,7 @@ a {
 .navbar {
     background-color: var(--secondaryColor);
     color: var(--mainText);
-    height: 80px;
+    height: 90px;
     overflow: hidden;
 }
 
